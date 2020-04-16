@@ -3,6 +3,7 @@
   <head>
     <title>Secret Message Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sonsie+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -13,14 +14,18 @@
       </div>
 
       <div class="card" id="message-form">
+        <h1>Write a secret message</h1>
+
         <form>
-          <label>Enter a secret message</label>
-          <textarea id="message-input" type='text' cols="50"></textarea>
-          <button>Submit</button>
+          <input id="message-input" type='text' minlength="10" required/>
+          <div class='submit'>
+            <button type='submit'>Submit</button>
+            <p>Generate a secret link to the message</p>
+          </div>
         </form>
       </div>
       <div class="card hide" id="link-form">
-        <p>Share the link</p>
+        <h1>Share the link</h1>
         <input id="link-input" size="60"/>
       </div>
     </div>
