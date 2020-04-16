@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: url(bg.svg) /* background from svgbackgrounds.com */
 }
 
@@ -15,14 +16,13 @@ h1 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   letter-spacing: 0.1rem;
 }
 
 .card {
   width: 600px;
-  height: 180px;
+  height: 200px;
   background-color: white;
   border-radius: 2px;
   padding: 20px;
@@ -45,7 +45,9 @@ input {
   width: 100%;
   height: 30px;
   margin-bottom: 20px;
-  padding: 0px;
+  padding: 2px;
+  font-size: 18px;
+  outline: none;
 }
 
 .hide {
@@ -58,8 +60,35 @@ button {
   font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  background-color: #B8FFF9;
+  border: none;
+
+}
+
+button:hover {
+  opacity: 0.85;
+  box-shadow: 2px 5px 5px 2px rgba(0,0,0,0.05)
+
 }
 
 .submit {
   display: flex;
+}
+
+.tooltip {
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+}
+
+.tooltiptext {
+  position: relative;
+  top: -40px;
+  left: 120px;
+  visibility: hidden;
+  width: 100px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

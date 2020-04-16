@@ -9,8 +9,9 @@
     <div class="container">
 
       <div class="card hide" id="message-show">
+        <p>Someone sent you a secret message:</p>
         <h1></h1>
-        <a href="./index.html">Write your own secret message</a>
+        <p><a href="./index.html">Write your own secret message</a></p>
       </div>
 
       <div class="card" id="message-form">
@@ -18,9 +19,9 @@
 
         <form>
           <input id="message-input" type='text' minlength="10" required/>
-          <div class='submit'>
+          <div class='submit tooltip'>
             <button type='submit'>Submit</button>
-            <p>Generate a secret link to the message</p>
+            <p class="tooltiptext">Generate a secret link</p>
           </div>
         </form>
       </div>
