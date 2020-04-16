@@ -7,7 +7,9 @@ if (message) {
   document.querySelector('h1').innerHTML = message;
 }
 
-document.querySelector('form').addEventListener('submit', e => {
+document.querySelector('form').addEventListener('submit', getUrl);
+
+function getUrl(e) {
   e.preventDefault();
 
   document.querySelector('#message-form').classList.add('hide');
@@ -19,6 +21,7 @@ document.querySelector('form').addEventListener('submit', e => {
   const link = document.querySelector('#link-input');
   link.value = `${window.location}#${encoded}`
   link.select();
-  document.execCommand('copy');
 
-});
+  document.querySelector('#message-preview').href=link.value;
+}
+

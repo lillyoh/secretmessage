@@ -55,7 +55,7 @@ input {
 }
 
 button {
-  width: 100px;
+  width: 150px;
   height: 30px;
   font-size: 12px;
   letter-spacing: 0.2em;
@@ -84,7 +84,7 @@ button:hover {
 .tooltiptext {
   position: relative;
   top: -40px;
-  left: 120px;
+  left: 180px;
   visibility: hidden;
   width: 100px;
 }
